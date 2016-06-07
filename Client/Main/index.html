@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    	<title>Tennis Fight</title>
+
+    	<link rel="stylesheet" type="text/css" href="./Main/css/app.css">
+  	</head>
+
+  	<body>
+
+        <div class="view selectPlayers">
+            <div class="btn" data-number="1">1 Player</div>
+            <div class="btn" data-number="2">2 Players</div>
+        </div>
+
+  		<div class="view connectPlayers">
+  			<div class="title"></div>
+  			<div class="qr-code">
+  				<img src="">
+  			</div>
+            <input id="name" type="text"/>
+  		</div>
+
+        <div class="view selectDifficulty">
+            <div class="btn" data-value="0">Noob</div>
+            <div class="btn" data-value="1">Beginner</div>
+            <div class="btn" data-value="2">Novice</div>
+            <div class="btn" data-value="3">Master</div>
+        </div>
+
+        <div class="view gameplay">
+            <div id="p1-name"></div>
+            <div id="p2-name"></div>
+            <div id="score">0 - 0</div>
+            <canvas id="scene" class="active"></canvas>
+        </div>
+
+        <div class="view winner">
+            <div class="title"></div>
+            <div id="restart">Play again!</div>
+        </div>
+
+  		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  		<script src="https://rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
+  		<script src="./Main/js/app.js"></script>
+  	</body>
+</html>

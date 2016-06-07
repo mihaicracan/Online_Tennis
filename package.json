@@ -1,0 +1,11 @@
+{
+  "name": "tennis-fight",
+  "version": "0.0.1",
+  "description": "Interactive Tennis Fighting Game",
+  "dependencies": {
+    "express": "~4.10.2",
+    "socket.io": "~1.3.7",
+    "express-device": "~0.4.2",
+    "randomstring": "~1.1.3"
+  }
+}

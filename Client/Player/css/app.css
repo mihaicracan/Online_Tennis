@@ -1,0 +1,51 @@
+@font-face {
+	font-family: MyriadPro-BoldCond;
+	src: url("../fonts/MyriadPro-BoldCond.otf") format("opentype");
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'MyriadPro-BoldCond';
+	background-image: url('../img/wood.jpg');
+	background-size: cover;
+	background-color: #333;
+	color: #1BD256;
+}
+
+.view {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.view.calibrate {
+	text-align: center;
+}
+
+.view.calibrate #btn {
+	display: inline-block;
+	margin-top: 100px;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #1BD256;
+	font-size: 40px;
+}
+
+.view.loading,
+.view.play,
+.view.disconnected {
+	text-align: center;
+}
+
+.view.loading p,
+.view.play p,
+.view.disconnected p {
+	margin-top: 100px;
+	font-size: 60px;
+}
+
+.view.play p {
+	font-size: 80px;
+}

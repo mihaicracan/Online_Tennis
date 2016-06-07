@@ -1,0 +1,147 @@
+@font-face {
+	font-family: MyriadPro-BoldCond;
+	src: url("../fonts/MyriadPro-BoldCond.otf") format("opentype");
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'MyriadPro-BoldCond';
+	background-image: url('../img/wood.jpg');
+	background-size: cover;
+	background-color: #333;
+	color: #1BD256;
+}
+
+.view {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.view .btn {
+	display: block;
+	width: 250px;
+    margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #1BD256;
+    font-size: 50px;	
+}
+
+.view.selectPlayers {
+	text-align: center;
+}
+
+.view.connectPlayers {
+	text-align: center;
+}
+
+.view.connectPlayers .title {
+	margin-top: 70px;
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.view.connectPlayers .qr-code {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.view.connectPlayers input {
+	margin-top: 50px;
+	padding-top: 8px;
+	width: 300px;
+	border-radius: 3px;
+	font-size: 40px;
+	font-family: 'MyriadPro-BoldCond';
+	text-align: center;
+	border: none;
+	outline: none;
+}
+
+.view.connectPlayers .qr-code img {
+	
+}
+
+.view.gameplay #scene {
+	position: absolute;
+	opacity: 0.1;
+	-webkit-transition: all .5s linear;
+	   -moz-transition: all .5s linear;
+	     -o-transition: all .5s linear;
+	        transition: all .5s linear;
+}
+
+.view.gameplay #scene.active {
+	opacity: 1;
+}
+
+.view.gameplay #p1-name,
+.view.gameplay #p2-name {
+	position: absolute;
+	margin-top: 20px;
+	font-size: 70px;
+	font-weight: bold;
+	color: #fff;
+	opacity: 0.2;
+}
+
+.view.gameplay #p1-name {
+	left: 100px;
+}
+
+.view.gameplay #p2-name {
+	right: 100px;
+}
+
+.view.gameplay #score {
+	position: absolute;
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	color: #fff;
+	opacity: 0.4;
+	-webkit-transition: all .5s linear;
+	   -moz-transition: all .5s linear;
+	     -o-transition: all .5s linear;
+	        transition: all .5s linear;
+}
+
+.view.gameplay #score.active {
+	margin-top: 100px;
+	font-size: 250px;
+	opacity: 0.65;
+}
+
+.view.winner {
+	text-align: center;
+}
+
+.view.winner .title {
+    margin-top: 100px;
+	text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.view.winner #restart {
+	display: inline-block;
+    margin-top: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1BD256;
+    font-size: 50px;
+}
